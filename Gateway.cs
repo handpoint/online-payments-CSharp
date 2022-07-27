@@ -25,13 +25,11 @@ namespace Gateway
 
         public const int RC_3DS_AUTHENTICATION_REQUIRED = 0x1010A;
 
-        // Non 3DS merchantId = 10001, with secret Circle4Take40Idea
-        // 3DS merchantId = 100856, with secret Threeds2Test60System
-
-
-        public Gateway(string merchantID = "100856", string merchantSecret = "Circle4Take40Idea",
-        string directUrl = "https://gateway.cardstream.com/direct/",
-        string hostedUrl = "https://gateway.cardstream.com/hosted/",
+        
+        //merchantID and merchantSecret will be provided by the Handpoint Support team
+        public Gateway(string merchantID = "155928", string merchantSecret = "m3rch4nts1gn4tur3k3y",
+        string directUrl = "https://commerce-api.handpoint.com/direct/",
+        string hostedUrl = "https://commerce-api.handpoint.com/hosted/",
         string proxyUrl = null)
         {
             this.merchantID = merchantID;
